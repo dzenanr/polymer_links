@@ -1,0 +1,4 @@
+name: polymer_links_s00
+description: A sample Polymer application
+dependencies:
+    polymer: any
