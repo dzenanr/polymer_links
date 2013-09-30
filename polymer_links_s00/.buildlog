@@ -24,3 +24,29 @@ Arguments: [...]
 #2      main (file:///home/dr/git/polymer/polymer_links/polymer_links_s00/build.dart:5:8)
 build.dart finished [302 ms]
 
+---
+build.dart --machine --changed=pubspec.yaml
+Unhandled exception:
+No top-level method 'parseOptions' declared.
+
+NoSuchMethodError : method not found: 'parseOptions'
+Receiver: top-level
+Arguments: [...]
+#0      NoSuchMethodError._throwNew (dart:core-patch/errors_patch.dart:99:5)
+#1      build (package:polymer/component_build.dart:21:42)
+#2      main (file:///home/dr/git/polymer/polymer_links/polymer_links_s00/build.dart:5:8)
+build.dart finished [375 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+Unhandled exception:
+No top-level method 'parseOptions' declared.
+
+NoSuchMethodError : method not found: 'parseOptions'
+Receiver: top-level
+Arguments: [...]
+#0      NoSuchMethodError._throwNew (dart:core-patch/errors_patch.dart:99:5)
+#1      build (package:polymer/component_build.dart:21:42)
+#2      main (file:///home/dr/git/polymer/polymer_links/polymer_links_s00/build.dart:5:8)
+build.dart finished [299 ms]
+

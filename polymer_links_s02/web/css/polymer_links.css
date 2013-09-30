@@ -1,0 +1,16 @@
+/* polymer_link.css */
+
+  body {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 16px;
+    background: #d9ece2;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+  }
+
+  h1 {
+    color: #003366;
+    font-size: 24px;
+  }

@@ -1,0 +1,14 @@
+<polymer-element name="web-links">
+  <template>
+    <ul>
+      <template repeat="{{webLink in webLinks}}">
+        <li>
+          <a href="{{webLink}}">
+            {{webLink}}
+          </a>
+        </li>
+      </template>
+    </ul>
+  </template>
+  <script type="application/dart" src="links.dart"></script>
+</polymer-element>
