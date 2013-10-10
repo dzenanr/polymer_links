@@ -5,16 +5,17 @@
     <meta charset="utf-8">
     <title>Polymer Links</title>
     <link rel="stylesheet" href="css/polymer_links.css">
-    <!-- my app component -->
-    <link rel="import" href="my_app.html">
+    <!-- web-links component -->
+    <link rel="import" href="web_links.html">
     <!-- bootstrap script for Polymer -->
     <script src="packages/polymer/boot.js"></script>
   </head>
   <body>
     <h1>Web Links</h1>
-
-    <my-app></my-app>
-
-    <!--<script type="application/dart" src="polymer_links.dart"></script>-->
+    <!--  <template id="tmpl" bind>  -->
+    <template bind>
+      <web-links webLinks="{{links}}"></web-links>
+    </template>
+    <script type="application/dart" src="polymer_links.dart"></script>
   </body>
 </html>

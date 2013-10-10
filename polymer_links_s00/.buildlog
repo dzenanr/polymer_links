@@ -50,3 +50,93 @@ Arguments: [...]
 #2      main (file:///home/dr/git/polymer/polymer_links/polymer_links_s00/build.dart:5:8)
 build.dart finished [299 ms]
 
+---
+build.dart --machine --full
+
+build.dart finished [11735 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [12008 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [13144 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [10989 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [13368 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [8610 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.html
+
+build.dart finished [8822 ms]
+
+---
+build.dart --machine --changed=web\polymer_links_s00.dart
+
+build.dart finished [8970 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [8778 ms]
+
+---
+build.dart --machine --changed=web\polymer_links_s00.dart
+
+build.dart finished [9389 ms]
+
+---
+build.dart --machine --changed=web\polymer_links_s00.dart
+
+build.dart finished [8872 ms]
+
+---
+build.dart --machine --changed=web\polymer_links_s00.dart
+
+build.dart finished [9269 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [8989 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [8981 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [8886 ms]
+
+---
+build.dart --machine --changed=web\polymer_links_s00.html
+
+build.dart finished [9173 ms]
+
+---
+build.dart --machine --changed=web\polymer_links_s00.html
+
+build.dart finished [8972 ms]
+
+---
+build.dart --machine --changed=web\polymer_links_s00.dart
+
+build.dart finished [11221 ms]
+

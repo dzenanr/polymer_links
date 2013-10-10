@@ -1,4 +1,4 @@
 name: polymer_links
-description: Polymer links application.
+description: A sample Polymer application
 dependencies:
   polymer: any

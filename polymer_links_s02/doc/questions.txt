@@ -1,0 +1,12 @@
+Polymer.dart
+
+Basic questions (no events, no update propagations)
+
+- how to pass an argument to a polymer-element?
+- how to pass a list to a polymer-element?
+- must we use a template to pass an argument to a polymer-element?
+- must we use the bind attribute to pass an argument to a polymer-element?
+
+- what does @published means?
+- whar does @observable mean?
+- what is the difference between @published and @observable?
