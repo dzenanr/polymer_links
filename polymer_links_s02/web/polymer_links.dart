@@ -1,5 +1,4 @@
 import 'dart:html';
-
 import 'package:polymer_links/links.dart';
 
 var links = new List<Link>();
