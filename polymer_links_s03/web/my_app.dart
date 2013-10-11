@@ -5,6 +5,7 @@ import 'package:polymer/polymer.dart';
 class MyApp extends PolymerElement {
   //@published var links = new List<Link>();
   //var links = new List<Link>();
+  //@observable var links = toObservable(new List<Link>());
   var links = toObservable(new List<Link>());
 
   /*
