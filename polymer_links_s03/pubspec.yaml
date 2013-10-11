@@ -1,0 +1,4 @@
+name: polymer_links
+description: Polymer links application.
+dependencies:
+  polymer: any

@@ -3,5 +3,5 @@ import 'package:polymer/polymer.dart';
 
 @CustomTag('web-links')
 class WebLinks extends PolymerElement {
-  @published List<Link> weblinks; 
+  @published List<Link> weblinks;
 }

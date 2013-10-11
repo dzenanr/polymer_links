@@ -1,0 +1,41 @@
+<polymer-element name="web-links">
+  <template>
+    <style>
+      ul {
+        list-style: none;
+        padding: 2px;
+        text-align: left;
+      }
+      li {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 18px;
+      }
+      a:link {
+        text-decoration: none;
+        font-weight: bold;
+        color: #003366;
+      }
+      a:visited {
+        text-decoration: none;
+        font-weight: bold;
+        color: #c50000;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #d9ece2;
+        background: #663117;
+      }
+    </style>
+    <ul>
+      <template repeat="{{weblink in weblinks}}">
+        <li>
+          <a href="{{weblink.url}}">
+            {{webLink.name}}
+          </a>
+        </li>
+      </template>
+    </ul>
+  </template>
+  <script type="application/dart" src="web_links.dart"></script>
+</polymer-element>
