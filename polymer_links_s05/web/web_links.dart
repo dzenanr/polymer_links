@@ -22,8 +22,8 @@ class WebLinks extends PolymerElement {
       error = true;
     }
     if (!error) {
-      var weblink = new Link(name.value, url.value);
-      links.add(weblink);
+      var link = new Link(name.value, url.value);
+      links.add(link);
       save();
     }
   }

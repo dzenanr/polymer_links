@@ -1,0 +1,25 @@
+Polymer.dart
+
+Basic questions (no events, no update propagations)
+
+- how to pass an argument to a polymer-element?
+  + from a main page that is not component: polymer_links_s02
+  + from one component to another component: polymer_links_s03
+- how to pass a list to a polymer-element? as any other argument
+- must we use a template to pass an argument to a polymer-element? yes
+- must we use the bind attribute to pass an argument to a polymer-element? no
+
+- what does @published means? an attribute of the component' tag
+- what does @observable mean? changes will be observed and reported to ?
+- what is the difference between @published and @observable?
+
+http://blog.butlermatt.me/?p=13
+Now any variable that is flagged with the @published annotation automatically becomes observable 
+and it is accessible as an attribute on your custom element’s tag.
+@published should be used only in a web component (polymer-element)
+
+https://www.dartlang.org/polymer-dart/upgrading-to-polymer-from-web-ui.html
+You can place <template> elements on the main HTML page, but they will not be bound to the main library’s scope. 
+Polymer.dart does not support binding to a library scope, but you can instantiate a template by setting the model to a Dart object.
+see polymer_links_s02
+
