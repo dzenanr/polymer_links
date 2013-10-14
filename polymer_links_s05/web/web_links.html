@@ -1,0 +1,60 @@
+<polymer-element name="web-links">
+  <template>
+    <style>
+      ul {
+        list-style: none;
+        padding: 2px;
+        text-align: left;
+      }
+      li {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 18px;
+      }
+      a:link {
+        text-decoration: none;
+        font-weight: bold;
+        color: #003366;
+      }
+      a:visited {
+        text-decoration: none;
+        font-weight: bold;
+        color: #c50000;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #d9ece2;
+        background: #663117;
+      }
+      .button {
+        padding: 1px;
+        background: #ffcc99;
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        border-style: outset;
+        border-color: #d7b9c9;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text"/>
+      <label for="url">Web Link</label>
+      <input id="url" type="text"/>
+      <br/>
+      <button on-click="add" class="button">Add</button>
+      <label id="message"></label>
+    </div>
+    <ul>
+      <template repeat="{{link in links}}">
+        <li>
+          <a href="{{link.url}}">
+            {{link.name}}
+          </a>
+        </li>
+      </template>
+    </ul>
+  </template>
+  <script type="application/dart" src="web_links.dart"></script>
+</polymer-element>
