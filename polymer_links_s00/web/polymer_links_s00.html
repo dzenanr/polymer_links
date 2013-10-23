@@ -5,12 +5,9 @@
     <meta charset="utf-8">
     <title>Sample app</title>
     <link rel="stylesheet" href="polymer_links_s00.css">
-    
-    <!-- import the click-counter -->
     <link rel="import" href="clickcounter.html">
-    <!-- This is the bootstrap script for Polymer. 
-         Use this INSTEAD of dart.js -->
-    <script src="packages/polymer/boot.js"></script>
+    <script type="application/dart" src="packages/polymer/init.dart"></script>
+    <script src="packages/browser/dart.js"></script>
   </head>
   <body>
     <h1>Polymer links s00</h1>
@@ -18,12 +15,7 @@
     <p>Hello world from Dart!</p>
     
     <div id="sample_container_id">
-      <!-- <template id="tmpl"> does not work wout bind-->
-      <template id="tmpl" bind>
-        <click-counter count="{{}}"></click-counter>
-      </template>
+      <click-counter count="3"></click-counter>
     </div>
-
-    <script type="application/dart" src="polymer_links_s00.dart"></script>
   </body>
 </html>
