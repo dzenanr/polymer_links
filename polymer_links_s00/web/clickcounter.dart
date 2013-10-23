@@ -5,7 +5,7 @@ import 'package:polymer/polymer.dart';
  */
 @CustomTag('click-counter')
 class ClickCounter extends PolymerElement {
-  @published int count = 0;
+  @published int count;
   
   ClickCounter.created() : super.created();
 
