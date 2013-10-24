@@ -7,10 +7,7 @@ import 'package:polymer/polymer.dart';
 class WebLinks extends PolymerElement {
   @published Links links = Model.one.links;
 
-  WebLinks.created() : super.created() {
-    print('created WebLinks model links: ${Model.one.links.internalList}');
-    print('created WebLinks links: ${links.internalList}');
-  }
+  WebLinks.created() : super.created();
 
   add(Event e, var detail, Node target) {
     InputElement name = shadowRoot.querySelector("#name");
@@ -24,8 +21,6 @@ class WebLinks extends PolymerElement {
       var link = new Link(name.value, url.value);
       if (links.add(link)) {
         links.order();
-        print('add WebLinks model links: ${Model.one.links.internalList}');
-        print('add WebLinks links: ${links.internalList}');
         save();
       } else {
         message.text = 'web link with that name already exists';
@@ -34,9 +29,9 @@ class WebLinks extends PolymerElement {
   }
 
   delete(Event e, var detail, Node target) {
-    InputElement name = shadowRoot.query("#name");
-    InputElement url = shadowRoot.query("#url");
-    LabelElement message = shadowRoot.query("#message");
+    InputElement name = shadowRoot.querySelector("#name");
+    InputElement url = shadowRoot.querySelector("#url");
+    LabelElement message = shadowRoot.querySelector("#message");
     message.text = '';
     Link link = links.find(name.value);
     if (link == null) {
