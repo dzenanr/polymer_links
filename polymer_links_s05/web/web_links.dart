@@ -26,7 +26,7 @@ class WebLinks extends PolymerElement {
     if (!error) {
       var link = new Link(name.value, url.value);
       links.add(link);
-      links.sort((m,n) => m.compareTo(n));
+      links.sort();
       save();
     }
   }

@@ -20,7 +20,7 @@ class WebLinks extends PolymerElement {
     if (!error) {
       var link = new Link(name.value, url.value);
       if (links.add(link)) {
-        links.order();
+        links.sort();
         save();
       } else {
         message.text = 'web link with that name already exists';

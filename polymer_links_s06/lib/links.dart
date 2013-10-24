@@ -70,8 +70,8 @@ class Links {
     return _list.remove(link);
   }
 
-  order() {
-    _list.sort((m,n) => m.compareTo(n));
+  sort() {
+    _list.sort();
   }
 }
 
