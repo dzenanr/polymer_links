@@ -1,6 +1,6 @@
 library links;
 
-class Link {
+class Link implements Comparable {
   String name;
   Uri url;
 
@@ -19,7 +19,11 @@ class Link {
     linkMap['url'] = url.toString();
     return linkMap;
   }
-  
+
+  String toString() {
+    return '{name: ${name}, url: ${url.toString()}}';
+  }
+
   /**
    * Compares two links based on their names.
    * If the result is less than 0 then the first link is less than the second,

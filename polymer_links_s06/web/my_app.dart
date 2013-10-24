@@ -5,12 +5,12 @@ import 'package:polymer/polymer.dart';
 
 @CustomTag('my-app')
 class MyApp extends PolymerElement {
- 
-  MyApp() {
+
+  MyApp.created() : super.created() {
     toObservable(Model.one.links.internalList);
-    load(); 
+    load();
   }
-  
+
   load() {
     String json = window.localStorage['polymer_links'];
     if (json == null) {
