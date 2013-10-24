@@ -5,7 +5,7 @@ import 'package:polymer/polymer.dart';
 
 @CustomTag('web-links')
 class WebLinks extends PolymerElement {
-  @published List<Link> links = Model.one.links;
+  @published List<Link> links;
 
   WebLinks.created() : super.created();
 
@@ -26,12 +26,19 @@ class WebLinks extends PolymerElement {
     if (!error) {
       var link = new Link(name.value, url.value);
       links.add(link);
-      links.sort();
       save();
     }
   }
 
+  List<Map<String, Object>> toJson() {
+    var linkList = new List<Map<String, Object>>();
+    for (Link link in links) {
+      linkList.add(link.toJson());
+    }
+    return linkList;
+  }
+
   save() {
-    window.localStorage['polymer_links'] = JSON.encode(Model.one.toJson());
+    window.localStorage['polymer_links'] = JSON.encode(toJson());
   }
 }
