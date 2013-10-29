@@ -3,7 +3,7 @@ import 'package:polymer/polymer.dart';
 
 @CustomTag('my-app')
 class MyApp extends PolymerElement {
-  var links = toObservable(new List<Link>());
+  var links = new List<Link>();
 
   MyApp.created() : super.created() {
     var link1 = new Link('On Dart', 'http://ondart.me/');

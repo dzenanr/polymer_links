@@ -5,19 +5,14 @@
     <meta charset="utf-8">
     <title>Polymer Links</title>
     <link rel="stylesheet" href="css/polymer_links.css">
-    <!-- web-links component -->
-    <link rel="import" href="web_links.html">
-    <script type="application/dart" src="packages/polymer/init.dart"></script>
+    <link rel="import" href="my_app.html">
+    <script type='application/dart'>
+      import 'package:polymer/init.dart';
+    </script>
     <script src="packages/browser/dart.js"></script>
   </head>
   <body>
     <h1>Web Links</h1>
-    <!--  <template id="tmpl">  -->
-    <template id="tmpl" bind>
-      <!--  <web-links></web-links>  -->
-      <!--  <web-links webLinks="{{links}}"></web-links>  -->
-      <web-links weblinks="{{}}"></web-links>  
-    </template>
-    <script type="application/dart" src="polymer_links.dart"></script>
+    <my-app></my-app>
   </body>
 </html>
