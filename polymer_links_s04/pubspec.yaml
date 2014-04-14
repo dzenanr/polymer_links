@@ -2,3 +2,6 @@ name: polymer_links
 description: Polymer links application.
 dependencies:
   polymer: any
+transformers:
+- polymer:
+    entry_points: web/polymer_links.html

@@ -2,3 +2,6 @@ name: polymer_links_s00
 description: A default Polymer application
 dependencies:
   polymer: any
+transformers:
+- polymer:
+    entry_points: web/polymer_links_s00.html
